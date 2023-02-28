@@ -98,6 +98,10 @@ aside {
 
 #mainvideo:hover + #title {
 	background-color: #111111;
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 60px;
 }
 
 #maincontent {
