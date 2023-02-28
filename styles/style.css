@@ -1,0 +1,173 @@
+html {
+	/* background-color: #c52222; */
+	font-family: 'WF Regola Neue', sans-serif;
+	scroll-behavior: smooth;
+}
+
+nav {
+	background-color: #111111;
+	height: 70px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+
+a {
+	color: rgb(206, 206, 206);
+	text-decoration: none;
+	font-size: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-weight: 550;
+	cursor: pointer;
+}
+
+a:hover {
+	color: white;
+}
+
+aside {
+	height: 500px;
+	width: 100%;
+	background-color: #161616;
+	right: 0;
+	left: 0;
+	top: 50px;
+	position: absolute;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.479);
+	color: rgb(206, 206, 206);
+}
+
+#maintitle {
+	font-size: 35px;
+	font-weight: 600;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#desc {
+	font-style: italic;
+	font-size: 15px;
+	opacity: 0.6;
+}
+
+#title {
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	background-color: #111111bc;
+	padding: 20px;
+	padding-bottom: 50px;
+	border-radius: 5px;
+	transition: 200ms;
+	width: 50%;
+	max-width: 460px;
+}
+
+#enrollnow {
+	position: absolute;
+	padding: 7px 15px;
+	background-color: rgb(101, 142, 197);
+	border-radius: 5px;
+	cursor: pointer;
+	border: none;
+	color: black;
+	font-weight: normal;
+	left: 0;
+	font-size: 13px;
+}
+
+#mainvideo {
+	position: absolute;
+	z-index: 0;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: blur(5px);
+	top: 15px;
+}
+
+#maincontent {
+	background-color: #111111;
+	width: 100%;
+	height: 100%;
+	top: 550px;
+	left: 0;
+	position: absolute;
+	z-index: 1;
+}
+
+#courses {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.courseclass {
+	margin-left: 10px;
+	margin-top: 15px;
+	width: 250px;
+	padding-bottom: 5px;
+	height: 350px;
+	background-color: #333333;
+	display: inline-block;
+	border-radius: 5px;
+	/* border: 2px solid white; */
+	/* color: rgba(255, 255, 255, 0.618); */
+	color: white;
+}
+
+#courseblock1, #courseblock2, #courseblock3, #courseblock4 {
+	position: absolute;
+	height: 100px;
+	width: 250px;
+}
+
+h2 {
+	color: #111111;
+}
+
+img {
+	/* position: absolute; */
+	height: 100px;
+	width: 230px;
+	object-fit: cover;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.descblock {
+	text-align: left;
+	width: 90%;
+	margin: 0 auto;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+p {
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.56);
+	margin-top: -10px;
+}
+
+ul {
+	position: absolute;
+	text-align: left;
+	font-size: 15px;
+	margin-left: -20px;
+}
+
+@media screen and (max-width: 400px) {
+	a {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
