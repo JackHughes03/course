@@ -171,3 +171,18 @@ ul {
 		margin-right: 10px;
 	}
 }
+
+@media screen and (max-width: 525px) {
+	.courseclass {
+		transform: scale(1.3);
+		margin-bottom: 80px;
+		margin-top: 50px;
+	}
+
+	#title {
+		transform: scale(0.7);
+		width: 100%;
+		left: -10%;
+		bottom: -10px;
+	}
+}
