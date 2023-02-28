@@ -1,5 +1,5 @@
 html {
-	/* background-color: #c52222; */
+	background-color: #111111;
 	font-family: 'WF Regola Neue', sans-serif;
 	scroll-behavior: smooth;
 }
@@ -113,7 +113,7 @@ aside {
 	margin-left: 10px;
 	margin-top: 15px;
 	width: 250px;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 	height: 350px;
 	background-color: #333333;
 	display: inline-block;
