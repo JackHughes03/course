@@ -269,16 +269,19 @@ footer {
 @media screen and (max-width: 435px) {
 	#courses {
 		width: 425px;
+		margin-left: -2px;
+		transform: scale(0.9);
+		margin-top: -60px;
 	}
 }
 
 @media screen and (max-width: 525px) {
-	.titlesectionp {
-		margin-bottom: 38px;
-	}
-
 	#title {
 		background-color: #111111e5;
+	}
+
+	.titlesectionp {
+		margin-bottom: 20px;
 	}
 }
 
