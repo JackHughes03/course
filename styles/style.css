@@ -14,7 +14,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 1;
+	z-index: 2;
 }
 
 a {
@@ -188,6 +188,77 @@ ul {
 	font-family: 'lemon';
 }
 
+#aboutblock {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 85%;
+	height: 300px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+	overflow: scroll;
+}
+
+#aboutblock::-webkit-scrollbar-track, #aboutblock::-webkit-scrollbar {
+	display: none;
+}
+
+#contactbusiness {
+	margin-top: 400px;
+	background: linear-gradient(to bottom, #2872bc00, rgb(233, 152, 112));
+}
+
+form {
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+}
+
+input[type="text"], textarea {
+	width: 110%;
+	background-color: #222222;
+	padding: 12px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+	box-sizing: border-box;
+	/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+	max-width: 500px;
+	font-family: 'lemon';
+	color: white;
+}
+
+textarea {
+	resize: none;
+	height: 150px;
+}
+
+input[type="submit"] {
+	background-color: #222222;
+	color: white;
+	font-weight: bold;
+	padding: 5px 50px;
+	border: none;
+	border-radius: 35px;
+	font-size: 15px;
+	cursor: pointer;
+	transition: 300ms;
+}
+
+footer {
+	color: white;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 12px;
+	bottom: 0;
+	z-index: 3;
+}
+
 @media screen and (max-width: 400px) {
 	a {
 		margin-left: 10px;
@@ -202,7 +273,7 @@ ul {
 		margin-top: 50px;
 		padding-bottom: 30px;
 	}
-
+	
 	.titlesectionp {
 		margin-bottom: 38px;
 	}
@@ -213,7 +284,11 @@ ul {
 		justify-content: right;
 	}
 	a {
-		margin-left: 10px;
-		margin-right: 5px;
+		margin-left: 0px;
+		margin-right: 15px;
+	}
+	
+	#enrollnow {
+		margin-left: 20px;
 	}
 }
