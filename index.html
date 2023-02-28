@@ -5,33 +5,41 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lemon' rel='stylesheet'>
 	<title>Website Course</title>
 </head>
 <body>
-	<nav>
-		<a>Home</a>
+	<nav id="navpos">
+		<p id="logo">WebHive</p>
+		<a href="#navpos">Home</a>
+		<a href="#courses">Courses</a>
 		<a>About</a>
-		<a>Courses</a>
 		<a>Contact</a>
 	</nav>
 	
-	<aside>
+	<header>
 		<video id="mainvideo" autoplay muted loop src="videos/1.mp4" playsinline></video>
 		<div id="title">
 			<h1 id="maintitle">Learn to code websites</h1><br>
-			<p id="desc">Learn to make websites through coding HTML, CSS, and Javascript. Additionally master your Design skills.</p>
+			<p class="descclass" id="desc">Learn to make websites through coding HTML, CSS, and Javascript. Additionally master your Design skills.</p>
 			<a href="#courses" id="enrollnow">See more</a>
 		</div>
-	</aside>
+	</header>
 	
 	<main id="maincontent">
 		<div id="courses">
+			
+			<div id="titleforsection">
+				<h2>Courses</h2>
+				<p class="titlesectionp">See what we offer in terms of courses.</p>
+			</div>
+			
 			<div class="courseclass">
 				<img src="images/fruit1.jpg">
 				
 				<div class="descblock">
 					<h3>HTML</h3>
-					<p>Learn to code HTML. Starting from from the ground up, teaching HTML/HTML5 through coding challenges and creative exercises.</p>
+					<p class="descclass">Learn to code HTML. Starting from from the ground up, teaching HTML/HTML5 through coding challenges and creative exercises.</p>
 					
 					<ul>
 						<li>Syntax And Structure</li>
@@ -48,7 +56,7 @@
 				
 				<div class="descblock">
 					<h3>CSS</h3>
-					<p>Learn to code CSS. Starting from the ground up, you will develop a key understanding of CSS and how to customise and use it for Web pages.</p>
+					<p class="descclass">Learn to code CSS. Starting from the ground up, you will develop a key understanding of CSS and how to customise and use it for Web pages.</p>
 					
 					<ul>
 						<li>Syntax and Structure</li>
@@ -65,7 +73,7 @@
 				
 				<div class="descblock">
 					<h3>Javascript</h3>
-					<p>Learn to code Javascript and use a more powerful coding language in web pages. You will learn how to manipulate and use best practices.</p>
+					<p class="descclass">Learn to code Javascript and use a more powerful coding language in web pages. You will learn how to manipulate and use best practices.</p>
 					
 					<ul>
 						<li>Variables and Operators</li>
@@ -82,7 +90,7 @@
 				
 				<div class="descblock">
 					<h3>Design</h3>
-					<p>Learn how to create visually stunning and user-friendly websites. You will learn to master your design and leave a lasting impression on your users.</p>
+					<p class="descclass">Learn how to create visually stunning and user-friendly websites. You will learn to master your design and leave a lasting impression on your users.</p>
 					
 					<ul>
 						<li>Layout and Composition</li>
@@ -93,6 +101,46 @@
 					</ul>
 				</div>
 			</div>
+
+			<div class="courseclass">
+				<img src="images/fruit4.jpg">
+				
+				<div class="descblock">
+					<h3>HTML, CSS, Javascript</h3>
+					<p class="descclass">Learn how to create visually stunning and user-friendly websites. You will learn to master your design and leave a lasting impression on your users.</p>
+					
+					<ul>
+						<li>Layout and Composition</li>
+						<li>Branding</li>
+						<li>Colour Theory</li>
+						<li>User Experience (UX) Design</li>
+						<li>Accessibility</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="courseclass">
+				<img src="images/fruit4.jpg">
+				
+				<div class="descblock">
+					<h3>AI</h3>
+					<p class="descclass">Learn how to create visually stunning and user-friendly websites. You will learn to master your design and leave a lasting impression on your users.</p>
+					
+					<ul>
+						<li>Layout and Composition</li>
+						<li>Branding</li>
+						<li>Colour Theory</li>
+						<li>User Experience (UX) Design</li>
+						<li>Accessibility</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+					
+		<div id="titleforsection">
+			<h2>About</h2>
+			<p class="titlesectionp">Find out what we are about.</p>
 		</div>
 	</main>
 	

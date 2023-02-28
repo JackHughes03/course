@@ -8,7 +8,7 @@ nav {
 	background-color: #111111;
 	height: 70px;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	display: flex;
@@ -31,7 +31,7 @@ a:hover {
 	color: white;
 }
 
-aside {
+header {
 	height: 500px;
 	width: 100%;
 	background-color: #161616;
@@ -68,6 +68,9 @@ aside {
 	width: 50%;
 	max-width: 460px;
 }
+#title:hover {
+	background-color: #111111;
+}
 
 #enrollnow {
 	position: absolute;
@@ -88,20 +91,9 @@ aside {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-	filter: blur(20px);
+	filter: blur(5px);
 	top: 15px;
 	transition: 200ms;
-}
-#mainvideo:hover {
-	filter: blur(0px);
-}
-
-#mainvideo:hover + #title {
-	background-color: #111111;
-	padding-top: 30px;
-	padding-right: 30px;
-	padding-left: 30px;
-	padding-bottom: 60px;
 }
 
 #maincontent {
@@ -118,7 +110,8 @@ aside {
 	width: 100%;
 	display: inline-block;
 	text-align: center;
-	margin-top: 50px;
+	/* margin-top: 10px; */
+	margin-bottom: 50px;
 }
 
 .courseclass {
@@ -141,10 +134,6 @@ aside {
 	width: 250px;
 }
 
-h2 {
-	color: #111111;
-}
-
 img {
 	/* position: absolute; */
 	height: 100px;
@@ -164,7 +153,7 @@ h3 {
 	font-size: 20px;
 }
 
-p {
+.descclass {
 	font-size: 13px;
 	color: rgba(255, 255, 255, 0.56);
 	margin-top: -10px;
@@ -175,6 +164,28 @@ ul {
 	text-align: left;
 	font-size: 15px;
 	margin-left: -20px;
+}
+
+#titleforsection {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	/* margin-bottom: 50px; */
+	color: white;
+	padding: 20px;
+}
+.titlesectionp {
+	opacity: 0.5;
+	font-size: 15px;
+	margin-top: -25px;
+}
+
+#logo {
+	position: absolute;
+	color: white;
+	left: 20px;
+	font-size: 18px;
+	font-family: 'lemon';
 }
 
 @media screen and (max-width: 400px) {
@@ -190,5 +201,19 @@ ul {
 		margin-bottom: 80px;
 		margin-top: 50px;
 		padding-bottom: 30px;
+	}
+
+	.titlesectionp {
+		margin-bottom: 38px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	nav {
+		justify-content: right;
+	}
+	a {
+		margin-left: 10px;
+		margin-right: 5px;
 	}
 }
