@@ -196,8 +196,8 @@ ul {
 	height: 300px;
 	padding: 20px;
 	border-radius: 10px;
-	background-color: white;
-	color: black;
+	background-color: #333333;
+	color: rgb(255, 255, 255);
 	overflow: scroll;
 }
 
@@ -207,29 +207,38 @@ ul {
 
 #contactbusiness {
 	margin-top: 400px;
-	background: linear-gradient(to bottom, #2872bc00, rgb(233, 152, 112));
+	/* background: linear-gradient(to bottom, #2872bc00, rgb(233, 152, 112)); */
+	height: 600px;
 }
 
 form {
 	width: 300px;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	text-align: center;
 	padding: 20px;
+	margin-left: 0px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #ffffff;
+	padding-right: 50px;
+	padding-bottom: 40px;
+	border-radius: 5px;
 }
 
 input[type="text"], textarea {
 	width: 110%;
-	background-color: #222222;
+	background-color: #333333;
 	padding: 12px;
 	margin-bottom: 20px;
 	border: none;
 	border-radius: 5px;
 	font-size: 15px;
 	box-sizing: border-box;
-	/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 	max-width: 500px;
-	font-family: 'lemon';
-	color: white;
+	color: black;
+	/* margin-left: 5px; */
+	font-family: system-ui;
 }
 
 textarea {
@@ -238,8 +247,8 @@ textarea {
 }
 
 input[type="submit"] {
-	background-color: #222222;
-	color: white;
+	background-color: #333333;
+	color: rgb(255, 255, 255);
 	font-weight: bold;
 	padding: 5px 50px;
 	border: none;
@@ -247,6 +256,9 @@ input[type="submit"] {
 	font-size: 15px;
 	cursor: pointer;
 	transition: 300ms;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 footer {
