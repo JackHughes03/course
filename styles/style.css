@@ -175,6 +175,7 @@ img {
 	object-fit: cover;
 	margin-top: 10px;
 	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.645);
 }
 
 .descblock {
@@ -303,6 +304,17 @@ footer {
 	font-size: 12px;
 	bottom: 0;
 	z-index: 3;
+}
+
+#darkmode {
+	/* position: absolute; */
+	box-shadow: none;
+	height: 30px;
+	width: 30px;
+	margin-bottom: 10px;
+}
+#darkmode {
+	cursor: pointer;
 }
 
 @media screen and (max-width: 400px) {
