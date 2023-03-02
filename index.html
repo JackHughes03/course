@@ -15,7 +15,7 @@
 		<a href="#courses">Courses</a>
 		<a href="#aboutbusiness">About</a>
 		<a href="#contactbusiness">Contact</a>
-		<img onclick="darkmodeclicked()" id="darkmode" src="images/darkmodelight.png">
+		<!-- <img onclick="darkmodeclicked()" id="darkmode" src="images/darkmodelight.png"> -->
 	</nav>
 	
 	<header>
@@ -111,7 +111,7 @@
 		
 		<section id="aboutbusiness">
 			
-			<div style="margin-top: -30px;" class="titleforsection">
+			<div style="margin-top: -30px; color: black;" class="titleforsection">
 				<h2>About</h2>
 				<p class="titlesectionp">Find out what we are about.</p>
 			</div>
@@ -123,22 +123,28 @@
 		
 		<section id="contactbusiness">
 			
-			<div style="padding-top: 10px;" class="titleforsection">
+			<!-- <div style="padding-top: 10px;" class="titleforsection">
 				<h2>Contact</h2>
 				<p class="titlesectionp">Contact us.</p>
-			</div>
+			</div> -->
 			
-			<form action="https://api.staticforms.xyz/submit" method="post">
-				<input type="text" name="name" placeholder="Your Name">
-				<input type="text" name="email" placeholder="Your Email" />
-				<textarea placeholder=" Enter Message" name="message"></textarea>
-				<input type="text" name="honeypot" style="display:none">
-				<input type="hidden" name="accessKey" value="aaaaaaaa-bbbb-cccc-dddd-eeee6666kkkk">
-				<input type="hidden" name="subject" value="Contact us from - example.com" />
-				<input type="hidden" name="replyTo" value="@">
-				<input type="hidden" name="redirectTo" value="https://example.com/contact/success">
-				<input type="submit" value="Send" />
-			</form>			
+			<div id="firsthalf">
+				<h2 class="contacth2">Write us</h2>
+				<form action="https://api.staticforms.xyz/submit" method="post">
+					<input type="text" name="name" placeholder="Name"><hr>
+					<input type="text" name="email" placeholder="Email" /><hr>
+					<textarea placeholder="Message" name="message"></textarea><hr>
+					<input type="text" name="honeypot" style="display:none">
+					<input type="hidden" name="accessKey" value="aaaaaaaa-bbbb-cccc-dddd-eeee6666kkkk">
+					<input type="hidden" name="subject" value="Contact us from - example.com" />
+					<input type="hidden" name="replyTo" value="@">
+					<input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+					<input type="submit" value="Send" />
+				</form>
+			</div>
+			<div id="secondhalf">
+					<h2 style="color: rgba(0, 0, 0, 0.5);" class="contacth2">Contact Information</h2>
+			</div>
 		</section>
 	</main>
 	
