@@ -1,16 +1,52 @@
-html {
+header, #title, #enrollnow, #mainvideo, .seemore, #maincontent, #courseblock1, #courseblock2, #courseblock3, #courseblock4, ul, #logo, #aboutblock, #firsthalf, #secondhalf, .contacth2, form, input[type="submit"], footer {
+	position: absolute;
+}
+
+html, nav, #title:hover, #maincontent, .seemore {
 	background-color: #111111;
+}
+
+html {
 	font-family: 'WF Regola Neue', sans-serif;
 	scroll-behavior: smooth;
 }
 
-nav {
-	background-color: #111111;
-	height: 70px;
+nav, header, #mainvideo, #maincontent, .courses {
 	width: 100%;
+}
+
+nav, header, #enrollnow, #firsthalf {
+	left: 0;
+}
+
+a, .courseclass, .titleforsection, #logo, .contacth2, footer, input[type="submit"] {
+	color: white;
+}
+
+a, #enrollnow, input[type="submit"], #darkmode {
+	cursor: pointer;
+}
+
+#maincontent, #courses, .titleforsection, form {
+	text-align: center;
+}
+
+a, #desc, ul, .titlesectionp, input[type="text"], textarea, input[type="submit"] {
+	font-size: 15px;
+}
+
+#title, .titleforsection, #aboutblock, form {
+	padding: 20px;
+}
+
+#title, #enrollnow, .seemore, .courseclass, img, form {
+	border-radius: 5px;
+}
+
+nav {
+	height: 70px;
 	position: fixed;
 	top: 0;
-	left: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -18,27 +54,17 @@ nav {
 }
 
 a {
-	color: rgb(206, 206, 206);
 	text-decoration: none;
-	font-size: 15px;
 	margin-left: 20px;
 	margin-right: 20px;
 	font-weight: 550;
-	cursor: pointer;
-}
-
-a:hover {
-	color: white;
 }
 
 header {
 	height: 500px;
-	width: 100%;
 	background-color: #161616;
 	right: 0;
-	left: 0;
 	top: 50px;
-	position: absolute;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.479);
 	color: rgb(206, 206, 206);
 }
@@ -52,94 +78,55 @@ header {
 
 #desc {
 	font-style: italic;
-	font-size: 15px;
 	opacity: 0.6;
 }
 
 #title {
-	position: absolute;
 	bottom: 50px;
 	left: 50px;
 	background-color: #111111bc;
-	padding: 20px;
 	padding-bottom: 50px;
-	border-radius: 5px;
 	transition: 200ms;
 	width: 50%;
 	max-width: 460px;
 }
-#title:hover {
-	background-color: #111111;
-}
 
 #enrollnow {
-	position: absolute;
 	padding: 7px 15px;
 	background-color: rgb(101, 142, 197);
-	border-radius: 5px;
-	cursor: pointer;
 	border: none;
 	color: black;
 	font-weight: normal;
-	left: 0;
 	font-size: 13px;
 }
 
 #mainvideo {
-	position: absolute;
 	z-index: 0;
 	height: 100%;
-	width: 100%;
 	object-fit: cover;
 	filter: blur(5px);
 	top: 15px;
 	transition: 200ms;
 }
 
-#navimg {
-	position: absolute;
-	left: 120px;
-	border-radius: 50px;
-	width: 50px;
-	height: 50px;
-	margin-top: 0px;
-}
-
-#navimg:hover {
-	height: 1000px;
-	width: 80%;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	margin-top: 400px;
-}
-
 #maincontent {
-	background-color: #111111;
 	width: 100%;
 	height: 100%;
 	top: 550px;
 	left: 0;
-	position: absolute;
 	z-index: 1;
 }
 
 #courses {
-	width: 100%;
 	display: inline-block;
-	text-align: center;
-	/* margin-top: 10px; */
 	margin-bottom: 100px;
 }
 
 .seemore {
-	position: absolute;
 	margin-top: 130px;
 	margin-left: -55px;
-	background-color: #111111;
 	padding: 5px;
 	width: 100px;
-	border-radius: 5px;
 	color: rgb(255, 255, 255);
 	transition: 200ms;
 }
@@ -156,25 +143,18 @@ header {
 	height: 400px;
 	background-color: #333333;
 	display: inline-block;
-	border-radius: 5px;
-	/* border: 2px solid white; */
-	/* color: rgba(255, 255, 255, 0.618); */
-	color: white;
 }
 
 #courseblock1, #courseblock2, #courseblock3, #courseblock4 {
-	position: absolute;
 	height: 100px;
 	width: 250px;
 }
 
 img {
-	/* position: absolute; */
 	height: 100px;
 	width: 230px;
 	object-fit: cover;
 	margin-top: 10px;
-	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.645);
 }
 
@@ -190,24 +170,18 @@ h3 {
 
 .descclass {
 	font-size: 13px;
-	color: rgba(255, 255, 255, 0.56);
+	color: rgba(255, 255, 255, 0.6);
 	margin-top: -10px;
 }
 
 ul {
-	position: absolute;
 	text-align: left;
-	font-size: 15px;
 	margin-left: -20px;
 }
 
 .titleforsection {
-	text-align: center;
 	font-size: 30px;
 	font-weight: 600;
-	/* margin-bottom: 50px; */
-	color: white;
-	padding: 20px;
 }
 .titlesectionp {
 	opacity: 0.5;
@@ -216,25 +190,20 @@ ul {
 }
 
 #logo {
-	position: absolute;
-	color: white;
 	left: 20px;
 	font-size: 18px;
 	font-family: 'lemon';
 }
 
 #aboutblock {
-	/* border: 2px solid black; */
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.378);
-	position: absolute;
+	/* box-shadow: 0 0 20px rgba(0, 0, 0, 0.378); */
 	left: 50%;
 	transform: translateX(-50%);
 	width: 85%;
 	height: 300px;
-	padding: 20px;
 	border-radius: 10px;
 	background-color: #33333300;
-	color: rgb(0, 0, 0);
+	color: rgb(188, 188, 188);
 	overflow: scroll;
 	font-family: 'lemon';
 }
@@ -244,37 +213,27 @@ ul {
 }
 
 #contactbusiness {
-	/* margin-top: 100px; */
-	/* background: linear-gradient(to bottom, #2872bc00, rgb(233, 152, 112)); */
 	height: 600px;
-	/* background-color: #643030; */
-	/* border: 2px solid white; */
 }
 
 #aboutbusiness {
-	background-color: rgb(127, 185, 255);
+	background-color: rgb(54, 81, 114);
 	height: 600px;
 }
 
 #firsthalf {
-	position: absolute;
-	width: 100%;
+	width: 50%;
 	height: 600px;
-	left: 0;
 	background-color: #272A34;
 }
-/*
 #secondhalf {
-	position: absolute;
 	width: 50%;
 	height: 600px;
 	background-color: #888888;
 	right: 0;
-}*/
+}
 
 .contacth2 {
-	color: white;
-	position: absolute;
 	font-size: 30px;
 	margin-left: 20%;
 	margin-top: 100px;
@@ -289,19 +248,12 @@ ul {
 
 form {
 	width: 60%;
-	max-width: 600px;
-	/* margin: 0 auto; */
-	text-align: center;
-	padding: 20px;
 	margin-left: 0px;
-	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 	margin-top: 150px;
-	/* background-color: #ffffff; */
 	padding-right: 50px;
 	padding-bottom: 40px;
-	border-radius: 5px;
 	z-index: 2;
 	transition: 200ms;
 	outline: none;
@@ -322,8 +274,6 @@ input[type="text"], textarea {
 	margin-bottom: 5px;
 	margin-top: 5px;
 	border: none;
-	border-radius: 5px;
-	font-size: 15px;
 	box-sizing: border-box;
 	max-width: 500px;
 	color: rgb(255, 255, 255);
@@ -337,23 +287,17 @@ textarea {
 
 input[type="submit"] {
 	background-color: rgb(101, 142, 197);
-	color: rgb(255, 255, 255);
 	font-weight: bold;
 	padding: 5px 50px;
 	border: none;
 	border-radius: 35px;
-	font-size: 15px;
-	cursor: pointer;
 	transition: 300ms;
-	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 	margin-top: 50px;
 }
 
 footer {
-	color: white;
-	position: absolute;
 	left: 50%;
 	transform: translate(-50%);
 	font-size: 12px;
@@ -362,16 +306,11 @@ footer {
 }
 
 #darkmode {
-	/* position: absolute; */
 	box-shadow: none;
 	height: 30px;
 	width: 30px;
 	margin-bottom: 10px;
 }
-#darkmode {
-	cursor: pointer;
-}
-
 @media screen and (max-width: 400px) {
 	a {
 		margin-left: 10px;
@@ -435,5 +374,14 @@ footer {
 	
 	#enrollnow {
 		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	#secondhalf {
+		display: none;
+	}
+	#firsthalf {
+		width: 100%;
 	}
 }
