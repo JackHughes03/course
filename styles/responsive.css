@@ -1,0 +1,74 @@
+@media screen and (max-width: 400px) {
+	a {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 435px) {
+	#courses {
+		width: 425px;
+		margin-left: -2px;
+		transform: scale(0.9);
+		margin-top: -60px;
+	}
+}
+
+@media screen and (max-width: 525px) {
+	#title {
+		background-color: #111111e5;
+	}
+
+	.titlesectionp {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.courseclass {
+		transform: scale(0.8);
+		/* margin-bottom: 80px; */
+		margin-top: -45px;
+		padding-bottom: 20px;
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	#title {
+		transform: scale(0.7);
+		bottom: 5px;
+		left: 5px;
+	}
+
+	a {
+		font-size: 12px;
+	}
+
+	#titleforsection {
+		transform: scale(0.8);
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	nav {
+		justify-content: right;
+	}
+	a {
+		margin-left: 0px;
+		margin-right: 15px;
+	}
+	
+	#enrollnow {
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	#secondhalf {
+		display: none;
+	}
+	#firsthalf {
+		width: 100%;
+	}
+}

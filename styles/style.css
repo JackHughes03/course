@@ -1,4 +1,4 @@
-header, #title, #enrollnow, #mainvideo, .seemore, #maincontent, #courseblock1, #courseblock2, #courseblock3, #courseblock4, ul, #logo, #aboutblock, #firsthalf, #secondhalf, .contacth2, form, input[type="submit"], footer {
+header, #title, #enrollnow, #mainvideo, .seemore, #maincontent, #courseblock1, #courseblock2, #courseblock3, #courseblock4, ul, #logo, #aboutblock, #firsthalf, #secondhalf, .contacth2, form, input[type="submit"], footer, #aboutcoursesblock {
 	position: absolute;
 }
 
@@ -43,6 +43,56 @@ a, #desc, ul, .titlesectionp, input[type="text"], textarea, input[type="submit"]
 	border-radius: 5px;
 }
 
+#title, #mainvideo, .seemore, form, input[type="submit"] {
+	transition: 200ms;
+}
+
+#aboutblock, form, input[type="submit"], footer, #aboutcoursesblock {
+	left: 50%;
+	transform: translate(-50%);
+}
+
+#courseblock1, #courseblock2, #courseblock3, #courseblock4 {
+	height: 100px;
+	width: 250px;
+}
+
+#firsthalf, #secondhalf {
+	height: 600px;
+	width: 50%;
+}
+
+#aboutblock, #logo, #aboutcoursesblock {
+	font-family: 'lemon';
+}
+
+.links, ul, .descblock {
+	text-align: left;
+}
+
+#maintitle, .titleforsection {
+	font-weight: 600;
+}
+
+#aboutcoursesblock::-webkit-scrollbar-track, #aboutcoursesblock::-webkit-scrollbar, #aboutcoursesblock::-webkit-scrollbar-corner, #aboutblock::-webkit-scrollbar-track, #aboutblock::-webkit-scrollbar, #aboutblock::-webkit-scrollbar-corner {
+	background-color: transparent;
+	width: 5px;
+}
+
+#aboutcoursesblock::-webkit-scrollbar-thumb, #aboutblock::-webkit-scrollbar-thumb {
+	background-color: rgb(188, 188, 188);
+}
+
+#aboutcoursesblock, #aboutblock {
+	width: 85%;
+	height: 300px;
+	border-radius: 10px;
+	background-color: #33333300;
+	color: rgb(211, 211, 211);
+	overflow: scroll;
+	max-width: 1000px;
+}
+
 nav {
 	height: 70px;
 	position: fixed;
@@ -71,7 +121,6 @@ header {
 
 #maintitle {
 	font-size: 35px;
-	font-weight: 600;
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -86,9 +135,12 @@ header {
 	left: 50px;
 	background-color: #111111bc;
 	padding-bottom: 50px;
-	transition: 200ms;
 	width: 50%;
 	max-width: 460px;
+}
+
+#title:hover {
+	transform: scale(1.03);
 }
 
 #enrollnow {
@@ -106,7 +158,6 @@ header {
 	object-fit: cover;
 	filter: blur(5px);
 	top: 15px;
-	transition: 200ms;
 }
 
 #maincontent {
@@ -128,7 +179,6 @@ header {
 	padding: 5px;
 	width: 100px;
 	color: rgb(255, 255, 255);
-	transition: 200ms;
 }
 .seemore:hover {
 	width: 150px;
@@ -145,11 +195,6 @@ header {
 	display: inline-block;
 }
 
-#courseblock1, #courseblock2, #courseblock3, #courseblock4 {
-	height: 100px;
-	width: 250px;
-}
-
 img {
 	height: 100px;
 	width: 230px;
@@ -159,7 +204,6 @@ img {
 }
 
 .descblock {
-	text-align: left;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -175,13 +219,11 @@ h3 {
 }
 
 ul {
-	text-align: left;
 	margin-left: -20px;
 }
 
 .titleforsection {
 	font-size: 30px;
-	font-weight: 600;
 }
 .titlesectionp {
 	opacity: 0.5;
@@ -192,24 +234,6 @@ ul {
 #logo {
 	left: 20px;
 	font-size: 18px;
-	font-family: 'lemon';
-}
-
-#aboutblock {
-	/* box-shadow: 0 0 20px rgba(0, 0, 0, 0.378); */
-	left: 50%;
-	transform: translateX(-50%);
-	width: 85%;
-	height: 300px;
-	border-radius: 10px;
-	background-color: #33333300;
-	color: rgb(188, 188, 188);
-	overflow: scroll;
-	font-family: 'lemon';
-}
-
-#aboutblock::-webkit-scrollbar-track, #aboutblock::-webkit-scrollbar {
-	display: none;
 }
 
 #contactbusiness {
@@ -222,13 +246,9 @@ ul {
 }
 
 #firsthalf {
-	width: 50%;
-	height: 600px;
 	background-color: #272A34;
 }
 #secondhalf {
-	width: 50%;
-	height: 600px;
 	background-color: #888888;
 	right: 0;
 }
@@ -249,13 +269,10 @@ ul {
 form {
 	width: 60%;
 	margin-left: 0px;
-	left: 50%;
-	transform: translateX(-50%);
 	margin-top: 150px;
 	padding-right: 50px;
 	padding-bottom: 40px;
 	z-index: 2;
-	transition: 200ms;
 	outline: none;
 }
 
@@ -291,15 +308,10 @@ input[type="submit"] {
 	padding: 5px 50px;
 	border: none;
 	border-radius: 35px;
-	transition: 300ms;
-	left: 50%;
-	transform: translateX(-50%);
 	margin-top: 50px;
 }
 
 footer {
-	left: 50%;
-	transform: translate(-50%);
 	font-size: 12px;
 	bottom: 0;
 	z-index: 3;
@@ -311,77 +323,18 @@ footer {
 	width: 30px;
 	margin-bottom: 10px;
 }
-@media screen and (max-width: 400px) {
-	a {
-		margin-left: 10px;
-		margin-right: 10px;
-	}
+
+#linksblock {
+	position: absolute;
+	top: 170px;
+	left: 50px;
 }
 
-@media screen and (max-width: 435px) {
-	#courses {
-		width: 425px;
-		margin-left: -2px;
-		transform: scale(0.9);
-		margin-top: -60px;
-	}
+.links {
+	color: white;
 }
 
-@media screen and (max-width: 525px) {
-	#title {
-		background-color: #111111e5;
-	}
-
-	.titlesectionp {
-		margin-bottom: 20px;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.courseclass {
-		transform: scale(0.8);
-		/* margin-bottom: 80px; */
-		margin-top: -45px;
-		padding-bottom: 20px;
-		margin-left: -20px;
-		margin-right: -20px;
-	}
-
-	#title {
-		transform: scale(0.7);
-		bottom: 5px;
-		left: 5px;
-	}
-
-	a {
-		font-size: 12px;
-	}
-
-	#titleforsection {
-		transform: scale(0.8);
-		padding: 0;
-	}
-}
-
-@media screen and (max-width: 650px) {
-	nav {
-		justify-content: right;
-	}
-	a {
-		margin-left: 0px;
-		margin-right: 15px;
-	}
-	
-	#enrollnow {
-		margin-left: 20px;
-	}
-}
-
-@media screen and (max-width: 850px) {
-	#secondhalf {
-		display: none;
-	}
-	#firsthalf {
-		width: 100%;
-	}
+#aboutcourses {
+	height: 600px;
+	background-color: rgb(119, 153, 122);
 }
