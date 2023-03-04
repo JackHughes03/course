@@ -19,7 +19,7 @@ nav, header, #enrollnow, #firsthalf {
 	left: 0;
 }
 
-a, .courseclass, .titleforsection, #logo, .contacth2, footer, input[type="submit"] {
+a, .courseclass, .titleforsection, #logo, .contacth2, footer, input[type="submit"], .links {
 	color: white;
 }
 
@@ -93,6 +93,11 @@ a, #desc, ul, .titlesectionp, input[type="text"], textarea, input[type="submit"]
 	max-width: 1000px;
 }
 
+#aboutcoursesblock {
+	margin-top: 20px;
+	color: rgb(231, 231, 231);
+}
+
 nav {
 	height: 70px;
 	position: fixed;
@@ -119,82 +124,6 @@ header {
 	color: rgb(206, 206, 206);
 }
 
-#maintitle {
-	font-size: 35px;
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-#desc {
-	font-style: italic;
-	opacity: 0.6;
-}
-
-#title {
-	bottom: 50px;
-	left: 50px;
-	background-color: #111111bc;
-	padding-bottom: 50px;
-	width: 50%;
-	max-width: 460px;
-}
-
-#title:hover {
-	transform: scale(1.03);
-}
-
-#enrollnow {
-	padding: 7px 15px;
-	background-color: rgb(101, 142, 197);
-	border: none;
-	color: black;
-	font-weight: normal;
-	font-size: 13px;
-}
-
-#mainvideo {
-	z-index: 0;
-	height: 100%;
-	object-fit: cover;
-	filter: blur(5px);
-	top: 15px;
-}
-
-#maincontent {
-	width: 100%;
-	height: 100%;
-	top: 550px;
-	left: 0;
-	z-index: 1;
-}
-
-#courses {
-	display: inline-block;
-	margin-bottom: 100px;
-}
-
-.seemore {
-	margin-top: 130px;
-	margin-left: -55px;
-	padding: 5px;
-	width: 100px;
-	color: rgb(255, 255, 255);
-}
-.seemore:hover {
-	width: 150px;
-	margin-left: -80px;
-}
-
-.courseclass {
-	margin-left: 10px;
-	margin-top: 15px;
-	width: 250px;
-	padding-bottom: 10px;
-	height: 400px;
-	background-color: #333333;
-	display: inline-block;
-}
-
 img {
 	height: 100px;
 	width: 230px;
@@ -203,67 +132,12 @@ img {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.645);
 }
 
-.descblock {
-	width: 90%;
-	margin: 0 auto;
-}
-
 h3 {
 	font-size: 20px;
 }
 
-.descclass {
-	font-size: 13px;
-	color: rgba(255, 255, 255, 0.6);
-	margin-top: -10px;
-}
-
 ul {
 	margin-left: -20px;
-}
-
-.titleforsection {
-	font-size: 30px;
-}
-.titlesectionp {
-	opacity: 0.5;
-	font-size: 15px;
-	margin-top: -25px;
-}
-
-#logo {
-	left: 20px;
-	font-size: 18px;
-}
-
-#contactbusiness {
-	height: 600px;
-}
-
-#aboutbusiness {
-	background-color: rgb(54, 81, 114);
-	height: 600px;
-}
-
-#firsthalf {
-	background-color: #272A34;
-}
-#secondhalf {
-	background-color: #888888;
-	right: 0;
-}
-
-.contacth2 {
-	font-size: 30px;
-	margin-left: 20%;
-	margin-top: 100px;
-}
-
-.contactp {
-	color: rgba(0, 0, 0, 0.5);
-	margin-top:50px;
-	margin-bottom: 50px;
-	margin-left: 20px;
 }
 
 form {
@@ -314,7 +188,89 @@ input[type="submit"] {
 footer {
 	font-size: 12px;
 	bottom: 0;
-	z-index: 3;
+	z-index: 1;
+	position: absolute;
+	left: 0px;
+}
+
+#maintitle {
+	font-size: 35px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#desc {
+	font-style: italic;
+	opacity: 0.6;
+
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing 1.2s steps(100, end);
+}
+
+#title {
+	bottom: 50px;
+	left: 50px;
+	background-color: #111111bc;
+	padding-bottom: 50px;
+	width: 50%;
+	max-width: 460px;
+}
+
+#title:hover {
+	transform: scale(1.03);
+}
+
+#enrollnow {
+	padding: 7px 15px;
+	background-color: rgb(101, 142, 197);
+	border: none;
+	color: black;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+#mainvideo {
+	z-index: 0;
+	height: 100%;
+	object-fit: cover;
+	filter: blur(5px);
+	top: 15px;
+}
+
+#maincontent {
+	width: 100%;
+	height: 100%;
+	top: 550px;
+	left: 0;
+	z-index: 1;
+}
+
+#courses {
+	display: inline-block;
+	margin-bottom: 100px;
+}
+
+#logo {
+	left: 20px;
+	font-size: 18px;
+}
+
+#contactbusiness {
+	height: 600px;
+}
+
+#aboutbusiness {
+	background-color: rgb(54, 81, 114);
+	height: 600px;
+}
+
+#firsthalf {
+	background-color: #272A34;
+}
+#secondhalf {
+	background-color: #888888;
+	right: 0;
 }
 
 #darkmode {
@@ -330,11 +286,69 @@ footer {
 	left: 50px;
 }
 
-.links {
-	color: white;
-}
-
 #aboutcourses {
+	width: 100%;
 	height: 600px;
 	background-color: rgb(119, 153, 122);
+}
+
+.seemore {
+	margin-top: 130px;
+	margin-left: -55px;
+	padding: 5px;
+	width: 100px;
+	color: rgb(255, 255, 255);
+}
+.seemore:hover {
+	width: 150px;
+	margin-left: -80px;
+}
+
+.courseclass {
+	margin-left: 10px;
+	margin-top: 15px;
+	width: 250px;
+	padding-bottom: 10px;
+	height: 400px;
+	background-color: #333333;
+	display: inline-block;
+}
+
+.descblock {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.descclass {
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.6);
+	margin-top: -10px;
+}
+
+.titleforsection {
+	font-size: 30px;
+}
+.titlesectionp {
+	opacity: 0.5;
+	font-size: 15px;
+	margin-top: -25px;
+}
+
+.contacth2 {
+	font-size: 30px;
+	margin-left: 20%;
+	margin-top: 100px;
+}
+
+.contactp {
+	color: rgba(0, 0, 0, 0.5);
+	margin-top:50px;
+	margin-bottom: 50px;
+	margin-left: 20px;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
 }

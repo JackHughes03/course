@@ -72,3 +72,28 @@
 		width: 100%;
 	}
 }
+
+@media screen and (min-width: 1500px) {
+	#aboutcourses {
+		width: 50%;
+		left: 0;
+		position: absolute;
+	}
+
+	#aboutbusiness {
+		width: 50%;
+		right: 0;
+		position: absolute;
+	}
+
+	#contactbusiness {
+		margin-top: 600px;
+	}
+
+	.courseclass {
+		transform: scale(1.1);
+		margin-left: 40px;
+		margin-right: 40px;
+		margin-top: 60px;
+	}
+}
