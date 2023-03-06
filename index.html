@@ -26,10 +26,14 @@
 		<a href="#aboutbusiness">About</a>
 		<a href="#contactbusiness">Contact</a>
 	</nav>
-	<hr>
 	
 	<header>
-		<video id="mainvideo" autoplay muted loop src="videos/1.mp4" playsinline></video>
+		<video id="mainvideo" autoplay muted loop playsinline>
+			<source src="videos/1.mp4" type="video/mp4">
+			Your browser doesn't support the video tag.
+		</video>
+
+		<button id="getipbutton" onclick="getip()">Get IP</button>
 		<div id="title">
 			<h1 id="maintitle">Learn to code websites</h1><br>
 			<p class="descclass" id="desc">Learn to make websites through coding HTML, CSS, and Javascript. Additionally master your design skills.</p>
@@ -163,7 +167,7 @@
 					<li class="links"><p>Github: </p><a href="https://github.com/webhivegithub" target="_blank">@WebHive</a></li>
 					<li class="links"><p>Instagram: </p><a href="https://instagram.com/webhive_" target="_blank">@WebHive_</a></li>
 				</ul>
-
+				
 				<footer>Copyright © 2023 WebHive</footer>
 			</div>
 		</section>

@@ -108,7 +108,18 @@ nav {
 	z-index: 2;
 }
 
-hr {
+#getipbutton {
+	position: absolute;
+	background-color: white;
+	color: black;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	right: 10px;
+	top: 30px;
+}
+
+/* hr {
 	width: 1px;
 	background-color: white;
 	border: none;
@@ -117,7 +128,7 @@ hr {
 	z-index: 2;
 	top: 75px;
 	left: -10px;
-}
+} */
 
 a {
 	text-decoration: none;
@@ -131,7 +142,6 @@ header {
 	background-color: #161616;
 	right: 0;
 	top: 50px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.479);
 	color: rgb(206, 206, 206);
 }
 
@@ -213,10 +223,9 @@ footer {
 #desc {
 	font-style: italic;
 	opacity: 0.6;
-
 	overflow: hidden;
-	white-space: nowrap;
-	animation: typing 1.2s steps(100, end);
+	/* white-space: nowrap;
+	animation: typing 1.2s steps(100, end); */
 }
 
 #title {
@@ -360,6 +369,6 @@ footer {
 
 /* The typing effect */
 @keyframes typing {
-	from { width: 0 }
+	from { width: 0% }
 	to { width: 100% }
 }
