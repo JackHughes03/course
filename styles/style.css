@@ -339,8 +339,8 @@ footer {
 	color: white;
 }
 .seemore:hover {
-	width: 150px;
-	margin-left: -80px;
+	background-color: var(--secondary-color);
+	color: black;
 }
 
 .courseclass {
@@ -348,7 +348,7 @@ footer {
 	margin-top: 15px;
 	width: 250px;
 	padding-bottom: var(--commonvalue10);
-	height: 400px;
+	height: 440px;
 	background-color: #333333;
 	display: inline-block;
 }
@@ -402,6 +402,10 @@ footer {
 	margin-top: var(--commonvalue10);
 	border-radius: var(--commonvalue5);
 	height: var(--commonvalue50);
+}
+
+.structure {
+	margin-top: 170px;
 }
 
 /* The typing effect */

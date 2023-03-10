@@ -30,22 +30,21 @@ function darkmodeclicked() {
         }
     }
 }
-
-
 function getip() {
     var title = document.getElementById("maintitle");
     var desc = document.getElementById("desc");
+    var getipbutton = document.getElementById("getipbutton");
     fetch('https://api.ipify.org?format=json')
     .then(response => response.json())
     .then(data => {
 
         if(title.innerHTML === "Your IP address is " + data.ip) {
+            getipbutton.innerHTML = "Get IP";
         title.innerHTML = "Learn to code websites";
-
         desc.innerHTML = "Learn to make websites through coding HTML, CSS, and Javascript. Additionally master your design skills.";
         } else {
         title.innerHTML = "Your IP address is " + data.ip;
-
+        getipbutton.innerHTML = "Revert";
         fetch('https://ipapi.co/' + data.ip + '/json/')
         .then(response => response.json())
         .then(data => {

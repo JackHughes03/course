@@ -6,7 +6,7 @@
 	--primary-height: 100%;
 }
 
-#backbutton, header, h1, #desc, nav {
+#backbutton, header, h1, #desc {
 	position: absolute;
 }
 
@@ -18,7 +18,7 @@ html, header {
 	background-color: var(--secondary-color);
 }
 
-#backbutton, h1, nav {
+#backbutton, h1 {
 	color: black;
 }
 
@@ -40,7 +40,7 @@ header, section {
 	left: var(--commonvalue0);
 }
 
-#imgcollection, nav, header, section {
+#imgcollection, header, section {
 	top: var(--commonvalue0);
 }
 
@@ -54,16 +54,43 @@ h1, #desc {
 	font-weight: bold;
 }
 
-#imgcollection, nav, li {
+#imgcollection, li {
 	display: flex;
 }
 
-nav, li {
+nav {
+	width: 100%;
+	height: 60px;
+	background-color: black;
+	position: absolute;
+}
+
+nav a {
+	color: white;
+	width: 100px;
+	text-decoration: none;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	cursor: pointer;
+}
+
+nav div {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+	
+li {
 	align-items: center;
 }
 
 html {
-	font-family: var(--primary-font);
+	font-family: var(--secondary-font);
 }
 
 #backbutton {
@@ -112,6 +139,7 @@ h1 {
 	top: 40%;
 	transform: translate(-40%);
 	font-size: 50px;
+	font-family: var(--primary-font);
 }
 
 h2 {
@@ -121,7 +149,6 @@ h2 {
 li {
 	transition: 100ms;
 	font-family: var(--secondary-font);
-	cursor: pointer;
 	color: black;
 	padding: 10px;
 	border-bottom: 1px solid black;
@@ -132,9 +159,28 @@ li {
 
 summary {
 	font-weight: 500;
+	cursor: pointer;
 }
 
 details {
 	margin-top: 5px;
 	font-weight: 400;
+}
+
+#stopbutton {
+	width: 60px;
+	height: 30px;
+	border-radius: 5px;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	display: none;
+	border: none;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+#imgcollection:hover #stopbutton {
+	display: block;
 }
