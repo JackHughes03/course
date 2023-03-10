@@ -1,9 +1,27 @@
+:root {
+	--secondary-color: rgb(101, 142, 197);
+	--primary-color: #111111;
+	--primary-fontsize: 15px;
+	--primary-borderradius: 5px;
+	--primary-width: 100%;
+	--primary-padding: 20px;
+	--primary-transition: 200ms;
+	--primary-position: 50%;
+	--secondary-font: 'lemon';
+	--commonvalue100: 100%;
+	--commonvalue50: 50px;
+	--commonvalue30: 30px;
+	--commonvalue20: 20px;
+	--commonvalue10: 10px;
+	--commonvalue5: 5px;
+}
+
 header, #title, #enrollnow, #mainvideo, .seemore, #maincontent, #courseblock1, #courseblock2, #courseblock3, #courseblock4, ul, #logo, #aboutblock, #firsthalf, #secondhalf, .contacth2, form, input[type="submit"], footer, #aboutcoursesblock {
 	position: absolute;
 }
 
 html, nav, #title:hover, #maincontent, .seemore {
-	background-color: #111111;
+	background-color: var(--primary-color);
 }
 
 html {
@@ -12,7 +30,7 @@ html {
 }
 
 nav, header, #mainvideo, #maincontent, .courses {
-	width: 100%;
+	width: var(--primary-width);
 }
 
 nav, header, #enrollnow, #firsthalf {
@@ -32,23 +50,23 @@ a, #enrollnow, input[type="submit"], #darkmode {
 }
 
 a, #desc, ul, .titlesectionp, input[type="text"], textarea, input[type="submit"] {
-	font-size: 15px;
+	font-size: var(--primary-fontsize);
 }
 
 #title, .titleforsection, #aboutblock, form {
-	padding: 20px;
+	padding: var(--primary-padding);
 }
 
 #title, #enrollnow, .seemore, .courseclass, img, form {
-	border-radius: 5px;
+	border-radius: var(--primary-borderradius);
 }
 
 #title, #mainvideo, .seemore, form, input[type="submit"] {
-	transition: 200ms;
+	transition: var(--primary-transition);
 }
 
 #aboutblock, form, input[type="submit"], footer, #aboutcoursesblock {
-	left: 50%;
+	left: var(--primary-position);
 	transform: translate(-50%);
 }
 
@@ -59,11 +77,11 @@ a, #desc, ul, .titlesectionp, input[type="text"], textarea, input[type="submit"]
 
 #firsthalf, #secondhalf {
 	height: 600px;
-	width: 50%;
+	width: var(--primary-position);
 }
 
 #aboutblock, #logo, #aboutcoursesblock {
-	font-family: 'lemon';
+	font-family: var(--secondary-font);
 }
 
 .links, ul, .descblock {
@@ -76,7 +94,7 @@ a, #desc, ul, .titlesectionp, input[type="text"], textarea, input[type="submit"]
 
 #aboutcoursesblock::-webkit-scrollbar-track, #aboutcoursesblock::-webkit-scrollbar, #aboutcoursesblock::-webkit-scrollbar-corner, #aboutblock::-webkit-scrollbar-track, #aboutblock::-webkit-scrollbar, #aboutblock::-webkit-scrollbar-corner {
 	background-color: transparent;
-	width: 5px;
+	width: var(--commonvalue5);
 }
 
 #aboutcoursesblock::-webkit-scrollbar-thumb, #aboutblock::-webkit-scrollbar-thumb {
@@ -86,7 +104,7 @@ a, #desc, ul, .titlesectionp, input[type="text"], textarea, input[type="submit"]
 #aboutcoursesblock, #aboutblock {
 	width: 85%;
 	height: 300px;
-	border-radius: 10px;
+	border-radius: var(--commonvalue10);
 	background-color: #33333300;
 	color: rgb(211, 211, 211);
 	overflow: scroll;
@@ -94,7 +112,7 @@ a, #desc, ul, .titlesectionp, input[type="text"], textarea, input[type="submit"]
 }
 
 #aboutcoursesblock {
-	margin-top: 20px;
+	margin-top: var(--commonvalue20);
 	color: rgb(231, 231, 231);
 }
 
@@ -105,18 +123,19 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 2;
+	z-index: 1;
 }
 
 #getipbutton {
 	position: absolute;
 	background-color: white;
 	color: black;
-	padding: 10px;
+	padding: var(--commonvalue10);
 	border: none;
 	border-radius: 3px;
-	right: 10px;
-	top: 30px;
+	right: var(--commonvalue10);
+	top: var(--commonvalue30);
+	cursor: pointer;
 }
 
 /* hr {
@@ -132,8 +151,8 @@ nav {
 
 a {
 	text-decoration: none;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: var(--commonvalue20);
+	margin-right: var(--commonvalue20);
 	font-weight: 550;
 }
 
@@ -141,7 +160,7 @@ header {
 	height: 500px;
 	background-color: #161616;
 	right: 0;
-	top: 50px;
+	top: var(--commonvalue50);
 	color: rgb(206, 206, 206);
 }
 
@@ -149,12 +168,12 @@ img {
 	height: 100px;
 	width: 230px;
 	object-fit: cover;
-	margin-top: 10px;
+	margin-top: var(--commonvalue10);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.645);
 }
 
 h3 {
-	font-size: 20px;
+	font-size: var(--commonvalue20);
 }
 
 ul {
@@ -165,7 +184,7 @@ form {
 	width: 60%;
 	margin-left: 0px;
 	margin-top: 150px;
-	padding-right: 50px;
+	padding-right: var(--commonvalue50);
 	padding-bottom: 40px;
 	z-index: 2;
 	outline: none;
@@ -175,7 +194,7 @@ hr {
 	width: 105%;
 	margin-top: -5px;
 	opacity: 0.5;
-	margin-left: 10px;
+	margin-left: var(--commonvalue10);
 }
 
 input[type="text"], textarea {
@@ -183,12 +202,12 @@ input[type="text"], textarea {
 	width: 110%;
 	background-color: transparent;
 	padding: 12px;
-	margin-bottom: 5px;
-	margin-top: 5px;
+	margin-bottom: var(--commonvalue5);
+	margin-top: var(--commonvalue5);
 	border: none;
 	box-sizing: border-box;
 	max-width: 500px;
-	color: rgb(255, 255, 255);
+	color: white;
 	font-family: system-ui;
 }
 
@@ -198,12 +217,11 @@ textarea {
 }
 
 input[type="submit"] {
-	background-color: rgb(101, 142, 197);
-	font-weight: bold;
+	background-color: var(--secondary-color);
 	padding: 5px 50px;
 	border: none;
 	border-radius: 35px;
-	margin-top: 50px;
+	margin-top: var(--commonvalue50);
 }
 
 footer {
@@ -229,10 +247,10 @@ footer {
 }
 
 #title {
-	bottom: 50px;
-	left: 50px;
+	bottom: var(--commonvalue50);
+	left: var(--commonvalue50);
 	background-color: #111111bc;
-	padding-bottom: 50px;
+	padding-bottom: var(--commonvalue50);
 	width: 50%;
 	max-width: 460px;
 }
@@ -243,7 +261,7 @@ footer {
 
 #enrollnow {
 	padding: 7px 15px;
-	background-color: rgb(101, 142, 197);
+	background-color:  var(--secondary-color);
 	border: none;
 	color: black;
 	font-weight: normal;
@@ -252,15 +270,15 @@ footer {
 
 #mainvideo {
 	z-index: 0;
-	height: 100%;
+	height: var(--commonvalue100);
 	object-fit: cover;
 	filter: blur(5px);
 	top: 15px;
 }
 
 #maincontent {
-	width: 100%;
-	height: 100%;
+	width: var(--commonvalue100);
+	height: var(--commonvalue100);
 	top: 550px;
 	left: 0;
 	z-index: 1;
@@ -272,7 +290,7 @@ footer {
 }
 
 #logo {
-	left: 20px;
+	left: var(--commonvalue20);
 	font-size: 18px;
 }
 
@@ -295,19 +313,20 @@ footer {
 
 #darkmode {
 	box-shadow: none;
-	height: 30px;
-	width: 30px;
-	margin-bottom: 10px;
+	height: var(--commonvalue30);
+	width: var(--commonvalue30);
+	margin-bottom: var(--commonvalue10);
 }
 
 #linksblock {
 	position: absolute;
+	left: var(--primary-position);;
+	transform: translate(-50%);
 	top: 170px;
-	left: 50px;
 }
 
 #aboutcourses {
-	width: 100%;
+	width: var(--commonvalue100);
 	height: 600px;
 	background-color: rgb(119, 153, 122);
 }
@@ -317,7 +336,7 @@ footer {
 	margin-left: -55px;
 	padding: 5px;
 	width: 100px;
-	color: rgb(255, 255, 255);
+	color: white;
 }
 .seemore:hover {
 	width: 150px;
@@ -325,10 +344,10 @@ footer {
 }
 
 .courseclass {
-	margin-left: 10px;
+	margin-left: var(--commonvalue10);
 	margin-top: 15px;
 	width: 250px;
-	padding-bottom: 10px;
+	padding-bottom: var(--commonvalue10);
 	height: 400px;
 	background-color: #333333;
 	display: inline-block;
@@ -346,7 +365,7 @@ footer {
 }
 
 .titleforsection {
-	font-size: 30px;
+	font-size: var(--commonvalue30);
 }
 .titlesectionp {
 	opacity: 0.5;
@@ -355,20 +374,42 @@ footer {
 }
 
 .contacth2 {
-	font-size: 30px;
+	font-size: var(--commonvalue30);
 	margin-left: 20%;
 	margin-top: 100px;
 }
 
 .contactp {
 	color: rgba(0, 0, 0, 0.5);
-	margin-top:50px;
-	margin-bottom: 50px;
-	margin-left: 20px;
+	margin-top: var(--commonvalue50);
+	margin-bottom: var(--commonvalue50);
+	margin-left: var(--commonvalue20);
+}
+
+.contactimages {
+	box-shadow: none;
+	height: 40px;
+	width: 40px;
+	margin-left: var(--commonvalue5);
+	display: flex;
+	margin-top: 0;
+}
+
+.links {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	margin-top: var(--commonvalue10);
+	border-radius: var(--commonvalue5);
+	height: var(--commonvalue50);
 }
 
 /* The typing effect */
 @keyframes typing {
-	from { width: 0% }
-	to { width: 100% }
+	from {
+		width: 0%
+	}
+	to {
+		width: 100% 
+	}
 }
