@@ -18,7 +18,7 @@
 	#title {
 		background-color: #111111e5;
 	}
-
+	
 	.titlesectionp {
 		margin-bottom: 20px;
 	}
@@ -27,23 +27,18 @@
 @media screen and (max-width: 600px) {
 	.courseclass {
 		transform: scale(0.8);
-		/* margin-bottom: 80px; */
 		margin-top: -45px;
 		padding-bottom: 20px;
 		margin-left: -20px;
 		margin-right: -20px;
 	}
-
+	
 	#title {
 		transform: scale(0.7);
 		bottom: 5px;
 		left: 5px;
 	}
-
-	a {
-		font-size: 12px;
-	}
-
+	
 	#titleforsection {
 		transform: scale(0.8);
 		padding: 0;
@@ -51,25 +46,32 @@
 }
 
 @media screen and (max-width: 650px) {
-	nav {
-		justify-content: right;
-	}
-	a {
-		margin-left: 0px;
-		margin-right: 15px;
-	}
-	
 	#enrollnow {
 		margin-left: 20px;
 	}
 }
 
+@media screen and (max-width: 750px) {
+	nav {
+		justify-content: right;
+	}
+	#navpos a {
+		margin-left: 0px;
+		margin-right: 15px;
+	}
+}
+
 @media screen and (max-width: 850px) {
 	#secondhalf {
-		display: none;
+		width: 100%;
+		margin-top: 600px;
 	}
 	#firsthalf {
 		width: 100%;
+	}
+	
+	footer {
+		justify-content: center;
 	}
 }
 
@@ -85,10 +87,6 @@
 		top: unset;
 	}
 	
-	header {
-		/* top: 0; */
-	}
-	
 	h1 {
 		margin-top: 0;
 	}
@@ -96,7 +94,7 @@
 	section {
 		padding-top: 5px;
 	}
-
+	
 	#contactbusiness {
 		padding-top: 0;
 	}
@@ -108,17 +106,17 @@
 		left: 0;
 		position: absolute;
 	}
-
+	
 	#aboutbusiness {
 		width: 50%;
 		right: 0;
 		position: absolute;
 	}
-
+	
 	#contactbusiness {
 		margin-top: 600px;
 	}
-
+	
 	.courseclass {
 		transform: scale(1.1);
 		margin-left: 40px;

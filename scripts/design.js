@@ -28,14 +28,14 @@ column2.scrollTop = 0;
 
 function stopbutton() {
   var stopbutton = document.getElementById("stopbutton");
-
+  
   if(column1.classList.contains('pause')) {
     column1.classList.remove('pause');
     column2.classList.remove('pause');
     stopbutton.innerHTML = "Pause";
   } else {
-  column1.classList.add('pause');
-  column2.classList.add('pause');
-  stopbutton.innerHTML = "Play";
+    column1.classList.add('pause');
+    column2.classList.add('pause');
+    stopbutton.innerHTML = "Play";
   }
 }

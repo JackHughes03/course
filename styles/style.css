@@ -138,21 +138,17 @@ nav {
 	cursor: pointer;
 }
 
-/* hr {
-	width: 1px;
-	background-color: white;
-	border: none;
-	height: 3px;
-	position: fixed;
-	z-index: 2;
-	top: 75px;
-	left: -10px;
-} */
+#title a {
+	margin-left: var(--commonvalue20);
+}
+
+#navpos a {
+	margin-left: var(--commonvalue20);
+	margin-right: var(--commonvalue20);
+}
 
 a {
 	text-decoration: none;
-	margin-left: var(--commonvalue20);
-	margin-right: var(--commonvalue20);
 	font-weight: 550;
 }
 
@@ -228,8 +224,14 @@ footer {
 	font-size: 12px;
 	bottom: 0;
 	z-index: 1;
+	display: flex;
+	justify-content: left;
+	align-items: center;
 	position: absolute;
-	left: 0px;
+	width: 100%;
+	height: 50px;
+	bottom: -50px;
+	background-color: #111111;
 }
 
 #maintitle {
@@ -242,8 +244,6 @@ footer {
 	font-style: italic;
 	opacity: 0.6;
 	overflow: hidden;
-	/* white-space: nowrap;
-	animation: typing 1.2s steps(100, end); */
 }
 
 #title {
@@ -320,9 +320,8 @@ footer {
 }
 
 #linksblock {
-	position: absolute;
-	left: var(--primary-position);;
-	transform: translate(-50%);
+	left: 35%;
+	transform: translate(-35%);
 	top: 170px;
 }
 
@@ -392,12 +391,12 @@ footer {
 	height: 40px;
 	width: 40px;
 	margin-left: var(--commonvalue5);
-	display: flex;
 	margin-top: 0;
 }
 
 .links {
 	display: flex;
+	width: 150%;
 	align-items: center;
 	background-color: white;
 	margin-top: var(--commonvalue10);
@@ -412,9 +411,9 @@ footer {
 /* The typing effect */
 @keyframes typing {
 	from {
-		width: 0%
+		width: 0%;
 	}
 	to {
-		width: 100% 
+		width: 100%; 
 	}
 }
