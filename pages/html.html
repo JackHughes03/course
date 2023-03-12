@@ -4,36 +4,75 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<link rel="stylesheet" type="text/css" href="../styles/stylecourses.css">
+	<meta name="og:description" content="Learn more about our design course and what it has to offer.">
+	<meta name="keywords" content="websites website design html css javascript">
+	<meta name="author" content="WebHive">
+	<meta property="og:title" content="WebHive">
+	<meta content="WebHive" name=twitter:title>
+	<meta content="Learn more about our design course and what it has to offer." name=twitter:description>
+	<meta content=favicon.png name=twitter:image>
+	<link rel="stylesheet" type="text/css" href="../styles/courses.css">
+	<link rel="stylesheet" type="text/css" href="../styles/responsive.css">
 	<link href='https://fonts.googleapis.com/css?family=Lemon' rel='stylesheet'>
-	<title>WebHive Courses</title>
+	<link rel="icon" href="../favicon.png">
+	<script src="../scripts/design.js" defer></script>
+	<title>WebHive html Course</title>
+	<style>
+		#titledesign {
+			background-color: #111111bc;
+			left: 30px;
+			bottom: 30px;
+			top: unset;
+			text-align: left;
+			padding-bottom: 10px;
+		}
+	</style>
 </head>
 <body>
-
+	<nav style="background-color: rgb(0, 109, 156);">
+		<a style="margin-left: 0;" href="" id="logo">WebHive</a>
+		<a href="#mainvideo">Home</a>
+		<a href="#structuresection">Structure</a>
+		<a href="#courseinfo">Course info</a>
+	</nav>
+	
+	<header>
+		<video id="mainvideo" autoplay muted loop playsinline>
+			<source src="../videos/3.mp4" type="video/mp4">
+			Your browser doesn't support the video tag.
+		</video>
+		
+		<div id="titledesign">
+			<h1 id="maintitledesign">HTML course</h1><br>
+			<p class="descclassdesign" id="descdesign">Learn more about the html course and what it has to offer. Scroll down to see more.</p>
+		</div>
+	</header>
+	
 	<main>
-		<section>
-			<h2>Introduction to HTML</h2>
+		<section id="structuresection">
+			<h2 class="sectiontitle">Structure</h2>
+			<ul>
+				<li> <details><summary>Introduction to html</summary><br></details></li>
+				<li> <details><summary>next</summary><br></details></li>
+				<li> <details><summary>next</summary><br></details></li>
+				<li> <details><summary>next</summary><br></details></li>
+				<li> <details><summary>next</summary><br></details></li>
+				<li> <details><summary>next</summary><br></details></li>
+				<li> <details><summary>next</summary><br></details></li>
+				<li> <details><summary>next</summary><br></details></li>
+				<li> <details><summary>next</summary><br></details></li>
+				<li> <details><summary>next</summary><br></details></li>
+			</ul>
 		</section>
-		<section>
-			<h2>Syntax And Structure</h2>
-		</section>
-		<section>
-			<h2>Elements And Attributes</h2>
-		</section>
-		<section>
-			<h2>Formatting</h2>
-		</section>
-		<section>
-			<h2>Multimedia</h2>
-		</section>
-		<section>
-			<h2>Basic CSS</h2>
-		</section>
-		<section>
-			<h2>Best practices</h2>
+		<hr>
+		<section id="courseinfo">
+			<h2 class="sectiontitle">Course info</h2>
+			<p class="coursedescription"></p>
+			<p class="coursedescription"></p>
+			<p class="coursedescription"></p>
+			<p class="coursedescription"></p>
+			<p class="coursedescription"></p>
 		</section>
 	</main>
-
-	<script src="scripts/index.js"></script>
 </body>
 </html>

@@ -20,7 +20,7 @@ header, #title, #enrollnow, #mainvideo, .seemore, #maincontent, #courseblock1, #
 	position: absolute;
 }
 
-html, nav, #title:hover, #maincontent, .seemore {
+html, #navpos, #title:hover, #maincontent, .seemore {
 	background-color: var(--primary-color);
 }
 
@@ -29,11 +29,11 @@ html {
 	scroll-behavior: smooth;
 }
 
-nav, header, #mainvideo, #maincontent, .courses {
+#navpos, header, #mainvideo, #maincontent, .courses {
 	width: var(--primary-width);
 }
 
-nav, header, #enrollnow, #firsthalf {
+#navpos, header, #enrollnow, #firsthalf {
 	left: 0;
 }
 
@@ -116,7 +116,7 @@ a, #desc, ul, .titlesectionp, input[type="text"], textarea, input[type="submit"]
 	color: rgb(231, 231, 231);
 }
 
-nav {
+#navpos {
 	height: 70px;
 	position: fixed;
 	top: 0;
@@ -348,7 +348,7 @@ footer {
 	margin-top: 15px;
 	width: 250px;
 	padding-bottom: var(--commonvalue10);
-	height: 440px;
+	height: 400px;
 	background-color: #333333;
 	display: inline-block;
 }
