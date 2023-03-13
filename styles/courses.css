@@ -24,7 +24,7 @@ header video {
 }
 
 nav {
-	background-color: #9F5729;
+	/* background-color: #9F5729; */
 	width: var(--commonvalue-100);
 	left: var(--commonvalue-0);
 	height: 70px;
