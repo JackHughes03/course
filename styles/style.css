@@ -80,8 +80,8 @@ a, #desc, ul, .titlesectionp, input[type="text"], textarea, input[type="submit"]
 	width: var(--primary-position);
 }
 
-#aboutblock, #logo, #aboutcoursesblock {
-	font-family: var(--secondary-font);
+#aboutblock, #aboutcoursesblock {
+	font-family: system-ui;
 }
 
 .links, ul, .descblock {
@@ -189,7 +189,9 @@ form {
 hr {
 	width: 105%;
 	margin-top: -5px;
-	opacity: 0.5;
+	opacity: 1;
+	color: white;
+	border-color: white;
 	margin-left: var(--commonvalue10);
 }
 
@@ -213,8 +215,10 @@ textarea {
 }
 
 input[type="submit"] {
-	background-color: var(--secondary-color);
-	padding: 5px 50px;
+	background-color: white;
+	padding: 5px 100px;
+	color: black;
+	font-weight: bold;
 	border: none;
 	border-radius: 35px;
 	margin-top: var(--commonvalue50);
@@ -225,13 +229,18 @@ footer {
 	bottom: 0;
 	z-index: 1;
 	display: flex;
-	justify-content: left;
+	justify-content: center;
 	align-items: center;
 	position: absolute;
-	width: 100%;
+	width: var(--primary-width);
 	height: 50px;
-	bottom: -50px;
+}
+
+#footersection {
+	position: absolute;
+	height: 400px;
 	background-color: #111111;
+	width: 100%;
 }
 
 #maintitle {
@@ -288,10 +297,11 @@ footer {
 	display: inline-block;
 	margin-bottom: 100px;
 }
-
+		
 #logo {
 	left: var(--commonvalue20);
 	font-size: 18px;
+	font-family: var(--secondary-font);
 }
 
 #contactbusiness {
@@ -414,6 +424,6 @@ footer {
 		width: 0%;
 	}
 	to {
-		width: 100%; 
+		width: var(--primary-width); 
 	}
 }

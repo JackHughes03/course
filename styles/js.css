@@ -1,0 +1,16 @@
+nav {
+	background-color: transparent;
+}
+
+header {
+	margin-top: -50px;
+}
+
+#titlecourses {
+	top: unset;
+	left: 30px;
+	bottom: 30px;
+	text-align: left;
+	background-color: #172f5b6a;
+	height: 50px;
+}

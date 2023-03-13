@@ -1,0 +1,48 @@
+#cssnav {
+	background-color: transparent;
+}
+
+.csslinknav {
+	color: black;
+	background-color: rgba(255, 255, 255, 0.564);
+	padding: 10px 15px;
+	border-radius: 5px;
+	transition: 150ms;
+}
+
+.csslinknav:hover {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+header {
+	margin-top: -50px;
+}
+
+#titlecourses {
+	background-color: #b6b6b64f;
+	/* box-shadow: 0 0 30px rgba(255, 255, 255, 0.221); */
+	top: unset;
+	left: 20px;
+	bottom: 20px;
+	text-align: left;
+	height: 60px;
+	/* background: linear-gradient(to right, #6b69004f, #7b00064f, #797f004f); */
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+#logo {
+	color: black;
+}
+
+/* @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */

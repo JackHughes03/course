@@ -52,14 +52,9 @@ header {
 	left: var(--commonvalue-0);
 }
 
-#title a {
-	margin-left: var(--commonvalue-20);
-}
-
-#titledesign {
+#titlecourses {
 	top: 30px;
 	right: var(--commonvalue-20);
-	/* background-color: #111111bc; */
 	width: 50%;
 	max-width: 460px;
 	position: absolute;
@@ -85,6 +80,7 @@ a {
 	left: var(--commonvalue-20);
 	font-size: 18px;
 	position: absolute;
+	margin-left: 0;
 }
 
 #enrollnow {
@@ -100,7 +96,7 @@ a {
 	font-size: 13px;
 }
 
-#maintitledesign {
+#maintitlecourses {
 	font-size: 35px;
 	margin-top: var(--commonvalue-0);
 	margin-bottom: var(--commonvalue-0);
@@ -114,7 +110,7 @@ a {
 	font-size: 15px;
 }
 
-.descclassdesign {
+.descclasscourses {
 	font-size: 13px;
 	color: rgba(255, 255, 255, 0.6);
 	margin-top: -10px;
@@ -184,4 +180,8 @@ hr {
 	padding: var(--commonvalue-50);
 	padding-top: var(--commonvalue-0);
 	padding-bottom: 10px;
+}
+
+.designelements {
+	font-size: 13px;
 }

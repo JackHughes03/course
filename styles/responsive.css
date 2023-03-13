@@ -69,6 +69,10 @@
 	#firsthalf {
 		width: 100%;
 	}
+
+	#footersection {
+		margin-top: 600px;
+	}
 	
 	footer {
 		justify-content: center;
