@@ -36,3 +36,7 @@ header {
 main {
 	height: 170vw;
 }
+
+section {
+	margin-top: -60px;
+}

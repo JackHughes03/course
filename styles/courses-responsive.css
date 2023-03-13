@@ -1,0 +1,26 @@
+@media screen and (max-width: 800px) {
+	#structuresection {
+		width: 100%;
+	}
+	
+	#courseinfo {
+		width: 100%;
+		top: 400px;
+		left: 0;
+	}
+	
+	hr {
+		display: none;
+	}
+	
+	#cssjsnav a {
+		padding: 4px 10px;
+		font-size: 14px;
+		margin-right: 10px;
+		margin-left: -5px;
+	}
+	
+	#cssjsnav {
+		justify-content: right;
+	}
+}
